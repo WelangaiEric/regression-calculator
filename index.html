@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/man.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css.map">
+    <link rel="stylesheet" href="/bootstrap-icons/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container ">
+        
+            <form action=""class="mt-3">
+                <legend class="text-center">Regression Calculator</legend>
+            
+                <div class="form-group">
+                    
+                    <input type="number" required class="form-control mt-1 x" id="x" placeholder="input each value as you click add">
+                    <textarea type="text" readonly class="form-control mt-1" id="display-x" placeholder="x">x</textarea>
+
+                    <button class="btn btn-danger mt-3" id="x-add">add<i class="bi bi-plus"></i></button>
+                    <button class="btn btn-secondary mt-3" id="x-delete">delete <i class="bi bi-trash"></i></button>
+
+                </div>
+                <div class="form-group mt-1">
+                   
+                    <input type="number" required class="form-control mt-1" id="y" placeholder="input each value as you click add">
+                    <textarea type="text" readonly class="form-control mt-1" id="display-y" placeholder="y">y</textarea>
+
+                    <button class="btn btn-danger mt-3" id="y-add">add<i class="bi bi-plus"></i></button>
+                    <button class="btn btn-secondary mt-3" id="y-delete">delete <i class="bi bi-trash"></i></button>
+
+    
+                </div>
+                <div class="form-group">
+                    <label for="predict" required class="bg-dark text-light mt-1">value of x to be predicted</label>
+                    <input type="number" class="form-control mt-1" id="predict" placeholder="value to be predicted">
+        
+                </div>
+                <button class="btn calculate btn-success mt-3">Calculate <i class="bi bi-save"></i></button>
+
+                <div class="form-group mt-1">
+                    <input type="text" readonly class="form-control mt-1" id="sumx" placeholder="sum of x">
+                    <input type="text" readonly class="form-control mt-1" id="sumy" placeholder="sum of y">
+                    <input type="text" readonly class="form-control mt-1" id="sumxy" placeholder="sum of xy">
+                    <input type="text" readonly class="form-control mt-1" id="sumxx" placeholder="sum of squares of x">
+                    <input type="text" readonly class="form-control mt-1" id="sumx-sumx" placeholder="sum of x squared">
+                    <input type="text" readonly class="form-control mt-1" id="value-b" placeholder="Value of b">
+                    <input type="text" readonly class="form-control mt-1" id="value-a" placeholder="value of a">
+                    <textarea type="text" readonly class="form-control mt-1" id="formula" placeholder="formula"></textarea>
+                    <input type="text" readonly class="form-control mt-1" id="predicted" placeholder="predicted">
+    
+                </div>
+            
+                
+            
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    
+            </form>
+            
+        </div>
+    </div>
+    
+    <script src="./js.js"></script>
+    <script src="/bootstrap.bundle.js"></script>
+    <script src="/bootstrap.bundle.js.map"></script>
+    <script src="/bootstrap-icons/bootstrap-icons.json"></script>
+</body>
+</html>
